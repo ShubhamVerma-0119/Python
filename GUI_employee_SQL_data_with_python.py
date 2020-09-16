@@ -139,7 +139,7 @@ def clear_all():
 def get_data():
 
         conn = psycopg2.connect(dbname="postgres", user="postgres", 
-                                password="Psv12060108@", host="localhost", 
+                                password="********", host="localhost", 
                                 port="5432")
         cur = conn.cursor()
         id = entry_id.get()
@@ -168,9 +168,10 @@ def get_data():
         messagebox.showinfo("Data saved","Congratulations! Student's Data Saved")  
 
 
+# show all values
 def all_values():
         conn = psycopg2.connect(dbname="postgres", user="postgres", 
-                                password="Psv12060108@", host="localhost", 
+                                password="********", host="localhost", 
                                 port="5432")
         cur = conn.cursor()
         query = '''select * from employee; '''
